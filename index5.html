@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Segunda Pagina</title>
+        <!-- <link rel="stylesheet" href="reset.css"-->
+        <link rel="stylesheet" href="15Relacionando_eventos_com_uma_solucao_tradicional.js">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="exemplosAula2.html" target="blank">Principal</a></li>
+                        <li><a href="exemplosAula2.html" target="_blank">Serviço</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for = "nomesobrenome">Nome e SobreNome *</label><h3 id="erroNome"></h3>
+                <input type="text" id="nomesobrenome" class="input-padrao" required="true">
+
+                <label for = "email">Email *</label><h3 id="erroEmail"></h3>
+                <input type="text" id="email" class="input-padrao" required="true">
+
+                <label for = "telefone">Telefone *</label><h3 id="erroTelefone"></h3>
+                <input type="text" id="telefone" class="input-padrao" required="true">
+                
+                <label for="mensagem" ondblclick="exibirInfo()">Mensagem *</label><h3 id="erroMsg"></h3>
+
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required="true"></textarea>
+
+                <label class="checkbox"><input type="checkbox" checked> Concordo com tudo</label>
+
+                <input type="submit" class="enviar" value="Enviar Formulario" onclick="validarCampos()">
+
+
+            </form>
+        </main>
+    </body>
+
+</html>
